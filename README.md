@@ -7,8 +7,6 @@ A sample API for Discount Ascii Warehouse shipped with docker
 - `docker build -t khaledez/daw-purchases-node .`
 - `docker run -p 8000:8000 -d khaledez/daw-purchases-node`
 
-You can also specify the port to listen on (default is `8000`): `PORT=3456 npm start`
-
 Now you can make API requests, eg: `curl -i localhost:8000/api/users/`
 
 Data will be generated automatically
