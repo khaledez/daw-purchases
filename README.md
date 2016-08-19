@@ -1,21 +1,17 @@
-# Purchases API
+# Dockerised Purchases API
 
-A sample API for Discount Ascii Warehouse
+A sample API for Discount Ascii Warehouse shipped with docker
 
 ## Install and start the server
 
-- `npm install`
-- `npm start`
+- `docker build -t khaledez/daw-purchases-node .`
+- `docker run -p 8000:8000 -d khaledez/daw-purchases-node`
 
 You can also specify the port to listen on (default is `8000`): `PORT=3456 npm start`
 
 Now you can make API requests, eg: `curl -i localhost:8000/api/users/`
 
-## Generating data
-
-- to use the same set of hardcoded data every time, put some files in `.data/`
-- if the files aren't found there (or invalid) `src/setup-store.js` will generate random data with [faker](https://npm.im/faker)
-- you can also run `./bin/generate-data.js` to see an example of random data
+Data will be generated automatically
 
 ## API Reference
 
