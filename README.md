@@ -4,8 +4,7 @@ A sample API for Discount Ascii Warehouse shipped with docker
 
 ## Install and start the server
 
-- `docker build -t khaledez/daw-purchases-node .`
-- `docker run -p 8000:8000 -d khaledez/daw-purchases-node`
+`docker-compose up -d`
 
 Now you can make API requests, eg: `curl -i localhost:8000/api/users/`
 

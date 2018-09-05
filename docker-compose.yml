@@ -1,0 +1,7 @@
+version: '3'
+services:
+  daw-purchases:
+    build: .
+    image: khaledez/daw-purchases-node
+    ports:
+      - "8000:8000"
